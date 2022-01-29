@@ -1,5 +1,7 @@
 package com.example.flowers;
 
+import android.graphics.Bitmap;
+
 public class Flower {
 
     public String category;
@@ -8,8 +10,15 @@ public class Flower {
     public String photo;
     public String name;
     public int productId;
+            private Bitmap bitmap;
 
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
 
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
 
     public String getPhoto() {
         return photo;
